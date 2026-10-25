@@ -1,0 +1,2 @@
+# Shared Exynos 8890 patches, one per line in application order.
+# None yet: GICv2 handling belongs to ArmCpu, not XNU.

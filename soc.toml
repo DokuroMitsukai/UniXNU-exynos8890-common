@@ -1,0 +1,10 @@
+schema_version = 2
+
+[soc]
+name = "exynos8890"
+description = "Samsung Exynos 8890 (S5E8890)"
+source_repository = "https://github.com/boloaimer/HeroGrace-kernel"
+source_revision = "ec7b697b429e9f1372082ce74ceebae411f0caf9"
+
+[components]
+include = ["ArmCpu", "ArmDTPlatform"]
