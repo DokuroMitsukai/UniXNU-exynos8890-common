@@ -23,8 +23,9 @@ Cortex-A53.
 
 - The DTSI describes all eight cores, PSCI 0.2 over SMC, GIC-400 at
   `0x11001000` and the 26 MHz generic timer.
-- `ArmCpu` registers GICv3 only. GICv2 support is required before XNU can use
-  this profile; it is recorded in the device porting record.
+- `ArmCpu` supports the GICv2 distributor and boot CPU interface for this
+  profile. Secondary-core GICv2 bring-up and XNU hardware boot are not yet
+  validated; both are recorded in the device porting record.
 - No device has reached a verified checkpoint with this profile yet.
 
 Build through the [UniXNU CLI](https://unixnu.com/building). Read the
